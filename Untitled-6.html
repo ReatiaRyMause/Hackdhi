@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<img src="Capturas/Recomendaciones.png" alt="" width="702" height="1256" usemap="#Map" border="0"/>
+<map name="Map" id="Map">
+  <area shape="rect" coords="576,21,650,79" onclick="javascript:contenido('contenido1')" />
+</map>
+	<div id="contenido1" style="display:none" >
+<ul id="MenuBar1" class="MenuBarVertical">
+  
+  <li ><a  href="#" >Mapa de sitio</a></li>
+        <ul>		
+         
+     </ul>
+  
+  <li><a class="#">Eventos del día</a></li>
+  <li><a href="#">Recomendaciones</a></li>
+    <ul>
+    
+  
+
+    </ul>
+     <li><a  href="#">Itinerario</a>
+  </li>
+  <li><a href="#">Guias</a></li>
+</ul>
+<span id="MenuBar1"></span>
+			</div>
+
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+	<script type="text/javascript" language="javascript">
+function contenido(id){
+$("#" + id).css({"display": "block"});
+}
+</script>
+</body>
+</html>
